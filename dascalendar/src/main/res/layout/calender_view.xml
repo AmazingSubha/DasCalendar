@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/border1">
+    <include
+        android:id="@+id/monthHeader"
+        layout="@layout/month_header" />
+
+    <include
+        android:id="@+id/weekHeader"
+        layout="@layout/week_header" />
+
+    <LinearLayout
+        android:id="@+id/datesView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <include layout="@layout/week_view1" />
+        <include layout="@layout/week_view2" />
+        <include layout="@layout/week_view3" />
+        <include layout="@layout/week_view4" />
+        <include layout="@layout/week_view5" />
+        <include layout="@layout/week_view6"
+            android:id="@+id/lastRow"/>
+
+    </LinearLayout>
+</LinearLayout>
